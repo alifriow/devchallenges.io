@@ -135,4 +135,8 @@ footer p {
   .item:nth-child(3n + 2) {
     margin-top: 5rem !important;
   }
+
+  .item__photo img {
+    width: 15rem;
+  }
 }
