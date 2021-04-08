@@ -79,8 +79,7 @@ main .flex {
 }
 
 .item__photo img {
-  max-width: 100%;
-  width: 17rem;
+  width: 14rem;
 }
 
 .text-side {
@@ -137,6 +136,6 @@ footer p {
   }
 
   .item__photo img {
-    width: 15rem;
+    width: 17rem;
   }
 }
