@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+:root {
+  --gray-1: #333333;
+  --gray-2: #4f4f4f;
+  --gray-4: #bdbdbd;
+  --orange: #f2994a;
+  --other: #828282;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+}
+
+.container {
+  width: 95%;
+  max-width: 989px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+/* HEADER */
+
+header {
+  margin-top: 3.2rem;
+}
+
+header .flex {
+  align-items: flex-start;
+}
+
+.header-box {
+  margin: 1.2rem 0;
+}
+
+.header-title {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.header-p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: var(--gray-2);
+  font-style: italic;
+}
+
+.header-svg {
+  margin-top: 0.5rem;
+  margin-right: 1.2rem;
+}
+
+.header-img {
+  border-radius: 1.2rem;
+}
+
+/* ASIDE */
+
+aside {
+  margin: 1.2rem 0 1.2rem;
+}
+
+aside .card.flex {
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card > .item:first-child {
+  flex: 0 0 100%;
+}
+
+.card > .item {
+  flex: 1 0 0;
+}
+
+.card h5 {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--gray-4);
+  text-transform: uppercase;
+}
+
+.card p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--gray-1);
+}
+
+.material-icons {
+  font-size: 2.3rem;
+  margin-right: 0.5rem;
+  color: var(--gray-2);
+  margin-top: 0.3rem;
+}
+
+.item:first-child .material-icons,
+.item:first-child p {
+  color: var(--orange);
+}
+
+/* SECTION */
+section {
+  margin: 2.5rem 0;
+}
+
+section h2 {
+  margin: 3rem 0 2.8rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+section h3 {
+  margin: 3.2rem 0 1.3rem;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+section h4 {
+  margin-bottom: 2.4rem;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+}
+
+section p {
+  line-height: 2.5rem;
+  color: var(--gray-1);
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fs-16 {
+  font-size: 1.6rem;
+}
+
+.fs-14 {
+  font-size: 1.4rem;
+}
+
+/* SECTION INGREDIENTS */
+.section-cheesecake h3 {
+  font-weight: 400;
+  font-style: italic;
+}
+
+input[type="checkbox"] {
+  margin-top: 0.3rem;
+  margin-right: 0.8rem;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+/* SECTION INSTRUCTIONS */
+.section-instructions p {
+  font-size: 1.6rem;
+  width: 90%;
+}
+
+.number {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  width: 36px;
+  height: 36px;
+  background: var(--orange);
+  margin-right: 1.5rem;
+  display: inline-block;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-source p {
+  font-size: 1.2rem;
+  color: var(--gray-4);
+  font-weight: 400;
+}
+
+footer {
+  padding: 2.4rem;
+  text-align: center;
+  color: var(--other);
+}
+
+.all.flex {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .all.flex {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  main {
+    flex: 3;
+  }
+
+  aside {
+    flex-basis: 21.6rem;
+    order: 2;
+    margin-top: 4rem;
+  }
+
+  aside .card {
+    border-radius: 1.2rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 4rem 0;
+  }
+
+  aside .card .item {
+    margin: 1rem 0;
+    flex-basis: 100%;
+  }
+
+  aside .card .item.flex {
+    justify-content: center;
+  }
+
+  .header-title {
+    font-size: 4.8rem;
+  }
+
+  .header-p {
+    font-size: 1.4rem;
+    width: 60%;
+    line-height: 1.7rem;
+  }
+
+  section h3 {
+    font-size: 2.4rem;
+  }
+
+  section h4 {
+    font-size: 1.8rem;
+  }
+
+  section p {
+    font-size: 1.6rem;
+  }
+
+  .card h5 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 1.4rem;
+  }
+
+  .material-icons {
+    font-size: 2.5rem;
+  }
+}
