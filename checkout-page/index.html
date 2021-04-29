@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+  <link rel="icon" href="devchallenges.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <title>Devchallenges</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <h3>Checkout</h3>
+    </div>
+  </div>
+  <div class="menu">
+    <div class="container">
+      <div class="left">
+        <form action="">
+          <div class="contact-information">
+            <h4>Contact Information</h4>
+            <div class="item">
+              <label for="email">E-mail</label>
+              <div class="input">
+                <i class="material-icons">mail</i>
+                <input type="email" name="email" id="email" placeholder="Enter your email..">
+              </div>
+            </div>
+            <div class="item">
+              <label for="phone">Phone</label>
+              <div class="input">
+                <i class="material-icons">call</i>
+                <input type="number" name="phone" id="phone" placeholder="Enter your phone..">
+              </div>
+            </div>
+          </div>
+
+          <div class="shipping-address">
+            <h4>Shipping Address</h4>
+            <div class="item">
+              <label for="full-name">Full name</label>
+              <div class="input">
+                <i class="material-icons">account_circle</i>
+                <input type="text" name="full-name" id="full-name" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="item">
+              <label for="address">Address</label>
+              <div class="input">
+                <i class="material-icons">home</i>
+                <input type="text" name="address" id="address" placeholder="Your address..">
+              </div>
+            </div>
+            <div class="item">
+              <label for="city">City</label>
+              <div class="input">
+                <i class="material-icons">apartment</i>
+                <input type="text" name="city" id="city" placeholder="Your city..">
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="item">
+                <label for="country">Country</label>
+                <div class="input">
+                  <i class="material-icons">public</i>
+                  <select name="country" id="country">
+                    <option value="">Your country..</option>
+                    <option value="indonesia">Indonesia</option>
+                    <option value="malaysia">Malaysia</option>
+                    <option value="singapore">Singapore</option>
+                  </select>
+                </div>
+              </div>
+              <div class="item">
+                <label for="postal-code">Postal code</label>
+                <div class="input">
+                  <i class="material-icons">markunread_mailbox</i>
+                  <input type="number" id="postal-code" placeholder="Your postal code..">
+                </div>
+              </div>
+            </div>
+            <div class="item d-flex check">
+              <input type="checkbox">
+              <p>Save this information for next time</p>
+            </div>
+            <button class="br-12" id="continue">Continue</button>
+          </div>
+        </form>
+      </div>
+      <div class="right">
+        <div class="buy-information br-12">
+          <div class="buy-header">
+            <div class="buy-item">
+              <img src="photo1.png" class="br-12" alt="photo1">
+              <div class="d-flex">
+                <div class="item-info">
+                  <h3>Vintage Backbag</h3>
+                  <p>$54.99 <span><s>$94.99</s></span></p>
+                </div>
+                <div class="input-group br-12">
+                  <button class="minus"> - </button>
+                  <div class="number" const="54.99">1</div>
+                  <button class="plus"> + </button>
+                </div>
+              </div>
+            </div>
+            <div class="buy-item">
+              <img src="photo1.png" class="br-12" alt="photo1">
+              <div class="d-flex">
+                <div class="item-info">
+                  <h3>Levi Shoes</h3>
+                  <p>$74.99 <span><s>$94.99</s></span></p>
+                </div>
+                <div class="input-group br-12">
+                  <button class="minus"> - </button>
+                  <div class="number" const="74.99">1</div>
+                  <button class="plus"> + </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="buy-footer">
+            <hr>
+            <div class="d-flex">
+              <h4>Shipping</h4>
+              <h4>$19</h4>
+            </div>
+            <hr>
+            <div class="d-flex">
+              <h4>Total</h4>
+              <h4>$<span class="total">148.98</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <p>created by <span>alifriow</span> - devChallenges.io</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
